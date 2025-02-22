@@ -17,7 +17,7 @@ import {  Application,
   const app = new Application();
 
   // Initialize the application
-  await app.init({ background: "#ff8e61", resizeTo: window });
+  await app.init({ background: "#D896FF", resizeTo: window });
 
   // Append the application canvas to the document body
   document.getElementById("pixi-container")!.appendChild(app.canvas);
@@ -92,8 +92,8 @@ import {  Application,
   reelsContainer.x = Math.round(app.screen.width / 2 - (reel_width * reel_count) / 2);
   // build tap and botto covers
 
-  const top = new Graphics().rect(0, 0, app.screen.width, margin).fill({color: 0xFD5602});
-  const bottom = new Graphics().rect(0, symbol_width * 4 + margin, app.screen.width, margin).fill({color: 0xFD5602});
+  const top = new Graphics().rect(0, 0, app.screen.width, margin).fill({color: 0x800080});
+  const bottom = new Graphics().rect(0, symbol_width * 4 + margin, app.screen.width, margin).fill({color: 0x800080});
 
   // add gradient to the top and bottom covers
   const fill = new FillGradient(0, 0, 0, 2);
